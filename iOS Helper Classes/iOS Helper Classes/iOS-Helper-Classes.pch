@@ -1,0 +1,29 @@
+//
+//  iOS-Helper-Classes.pch
+//  iOS Helper Classes
+//
+//  Created by Akshada on 5/31/16.
+//  Copyright © 2016 Systematix Infotech Pvt. Ltd. All rights reserved.
+//
+
+#ifndef iOS_Helper_Classes_pch
+#define iOS_Helper_Classes_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+
+#import "AppDelegate.h"
+
+#import "NSData+Base64.h"
+#import "NSString+Helper.h"
+#import "ActivityViewController.h"
+#import "Constant.h"
+
+#import "ApplicationManager.h"
+#import "IAPManager.h"
+#import "LocationManager.h"
+#import "ValidationManager.h"
+
+#endif /* iOS_Helper_Classes_pch */

@@ -18,6 +18,11 @@
 		324B287C1C3E510200F51149 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287A1C3E510200F51149 /* NSString+Helper.m */; };
 		324B287F1C3E674500F51149 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287E1C3E674500F51149 /* NSData+Base64.m */; };
 		324B28801C3E674500F51149 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287E1C3E674500F51149 /* NSData+Base64.m */; };
+		8C396BC81CFD8F800096F3E3 /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BC71CFD8F800096F3E3 /* IAPManager.m */; };
+		8C396BCB1CFD8F8F0096F3E3 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BCA1CFD8F8F0096F3E3 /* LocationManager.m */; };
+		8C396BCE1CFD8F9E0096F3E3 /* ValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BCD1CFD8F9E0096F3E3 /* ValidationManager.m */; };
+		8C396BD21CFD92CC0096F3E3 /* ApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BD11CFD92CC0096F3E3 /* ApplicationManager.m */; };
+		8C396BD61CFD9A8B0096F3E3 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BD51CFD9A8B0096F3E3 /* ActivityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,18 @@
 		324B287A1C3E510200F51149 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
 		324B287D1C3E674500F51149 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		324B287E1C3E674500F51149 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		8C396BC61CFD8F800096F3E3 /* IAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPManager.h; sourceTree = "<group>"; };
+		8C396BC71CFD8F800096F3E3 /* IAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPManager.m; sourceTree = "<group>"; };
+		8C396BC91CFD8F8F0096F3E3 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		8C396BCA1CFD8F8F0096F3E3 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		8C396BCC1CFD8F9E0096F3E3 /* ValidationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationManager.h; sourceTree = "<group>"; };
+		8C396BCD1CFD8F9E0096F3E3 /* ValidationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationManager.m; sourceTree = "<group>"; };
+		8C396BD01CFD92CC0096F3E3 /* ApplicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationManager.h; sourceTree = "<group>"; };
+		8C396BD11CFD92CC0096F3E3 /* ApplicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationManager.m; sourceTree = "<group>"; };
+		8C396BD31CFD95C20096F3E3 /* iOS-Helper-Classes.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Helper-Classes.pch"; sourceTree = "<group>"; };
+		8C396BD41CFD9A8B0096F3E3 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		8C396BD51CFD9A8B0096F3E3 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		8C396BD71CFD9B550096F3E3 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +106,7 @@
 		324B28521C3E4E5B00F51149 /* iOS Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8C396BC21CFD8F2F0096F3E3 /* Manager */,
 				324B28781C3E4EB400F51149 /* Helper Classes */,
 				324B28561C3E4E5B00F51149 /* AppDelegate.h */,
 				324B28571C3E4E5B00F51149 /* AppDelegate.m */,
@@ -107,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				324B28541C3E4E5B00F51149 /* main.m */,
+				8C396BD31CFD95C20096F3E3 /* iOS-Helper-Classes.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,8 +146,58 @@
 				324B287E1C3E674500F51149 /* NSData+Base64.m */,
 				324B28791C3E510200F51149 /* NSString+Helper.h */,
 				324B287A1C3E510200F51149 /* NSString+Helper.m */,
+				8C396BD41CFD9A8B0096F3E3 /* ActivityViewController.h */,
+				8C396BD51CFD9A8B0096F3E3 /* ActivityViewController.m */,
+				8C396BD71CFD9B550096F3E3 /* Constant.h */,
 			);
 			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		8C396BC21CFD8F2F0096F3E3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C396BCF1CFD92BB0096F3E3 /* Application Manager */,
+				8C396BC31CFD8F5D0096F3E3 /* IAP Manager */,
+				8C396BC41CFD8F5D0096F3E3 /* Location Manager */,
+				8C396BC51CFD8F5D0096F3E3 /* Validation Manager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8C396BC31CFD8F5D0096F3E3 /* IAP Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C396BC61CFD8F800096F3E3 /* IAPManager.h */,
+				8C396BC71CFD8F800096F3E3 /* IAPManager.m */,
+			);
+			path = "IAP Manager";
+			sourceTree = "<group>";
+		};
+		8C396BC41CFD8F5D0096F3E3 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C396BC91CFD8F8F0096F3E3 /* LocationManager.h */,
+				8C396BCA1CFD8F8F0096F3E3 /* LocationManager.m */,
+			);
+			path = "Location Manager";
+			sourceTree = "<group>";
+		};
+		8C396BC51CFD8F5D0096F3E3 /* Validation Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C396BCC1CFD8F9E0096F3E3 /* ValidationManager.h */,
+				8C396BCD1CFD8F9E0096F3E3 /* ValidationManager.m */,
+			);
+			path = "Validation Manager";
+			sourceTree = "<group>";
+		};
+		8C396BCF1CFD92BB0096F3E3 /* Application Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C396BD01CFD92CC0096F3E3 /* ApplicationManager.h */,
+				8C396BD11CFD92CC0096F3E3 /* ApplicationManager.m */,
+			);
+			path = "Application Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +300,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C396BC81CFD8F800096F3E3 /* IAPManager.m in Sources */,
+				8C396BCB1CFD8F8F0096F3E3 /* LocationManager.m in Sources */,
 				324B285B1C3E4E5B00F51149 /* ViewController.m in Sources */,
 				324B28581C3E4E5B00F51149 /* AppDelegate.m in Sources */,
+				8C396BCE1CFD8F9E0096F3E3 /* ValidationManager.m in Sources */,
+				8C396BD21CFD92CC0096F3E3 /* ApplicationManager.m in Sources */,
 				324B287F1C3E674500F51149 /* NSData+Base64.m in Sources */,
 				324B28551C3E4E5B00F51149 /* main.m in Sources */,
 				324B287B1C3E510200F51149 /* NSString+Helper.m in Sources */,
+				8C396BD61CFD9A8B0096F3E3 /* ActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "iOS Helper Classes/iOS-Helper-Classes.pch";
 				INFOPLIST_FILE = "iOS Helper Classes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SIPL.iOS-Helper-Classes";
@@ -374,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "iOS Helper Classes/iOS-Helper-Classes.pch";
 				INFOPLIST_FILE = "iOS Helper Classes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SIPL.iOS-Helper-Classes";
@@ -424,6 +500,7 @@
 				324B28741C3E4E5B00F51149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		324B28751C3E4E5B00F51149 /* Build configuration list for PBXNativeTarget "iOS Helper ClassesTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +509,7 @@
 				324B28771C3E4E5B00F51149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

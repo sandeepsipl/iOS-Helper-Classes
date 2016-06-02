@@ -47,7 +47,8 @@
 }
 
 - (void)loadStore:(id)vc forProduct:(NSString*)productName{
-    if([[ApplicationManager getInstance] rootCheck]){
+    
+    if([self rootCheck]){
         return;
     }
     
@@ -66,8 +67,12 @@
         SKPayment *payment = [SKPayment paymentWithProduct:proUpgradeProduct];
         [[SKPaymentQueue defaultQueue] addPayment:payment];
     } else {
-        [[ApplicationManager getInstance] showAlertForVC:nil withTitle:@"Oops!" andMessage:@"No product found or product is invalid."];
+        NSLog(@"Oops! No product found or product is invalid.");
+                
+//        [[ApplicationManager getInstance] showAlertForVC:nil withTitle:@"Oops!" andMessage:@"No product found or product is invalid."];
         [[NSNotificationCenter defaultCenter] postNotificationName:kInAppPurchaseManagerTransactionFailedNotification object:self userInfo:nil];
+        
+        return;
     }
 }
 
@@ -89,7 +94,7 @@
 
 - (void)finishTransaction:(SKPaymentTransaction *)transaction wasSuccessful:(BOOL)wasSuccessful {
     // remove the transaction from the payment queue.
-    STOP_ACTIVITY_INDICATOR;
+//    STOP_ACTIVITY_INDICATOR;
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
     NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:transaction, @"transaction" ,transaction.payment.productIdentifier,@"productId", nil];
     if (wasSuccessful) {
@@ -102,7 +107,7 @@
         
     } else {
         if(transaction.error.code == SKErrorPaymentCancelled){
-            DLog(@"transaction error code %ld",(long)transaction.error.code);
+            NSLog(@"transaction error code %ld",(long)transaction.error.code);
         }else{
             [[NSNotificationCenter defaultCenter] postNotificationName:kInAppPurchaseManagerTransactionFailedNotification object:self userInfo:userInfo];
         }
@@ -114,13 +119,13 @@
     
     [self recordTransaction:transaction];
     [self finishTransaction:transaction wasSuccessful:YES];
-    STOP_ACTIVITY_INDICATOR;
+//    STOP_ACTIVITY_INDICATOR;
 }
 
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
     [self recordTransaction:transaction.originalTransaction];
     [self finishTransaction:transaction wasSuccessful:YES];
-    STOP_ACTIVITY_INDICATOR;
+//    STOP_ACTIVITY_INDICATOR;
 }
 
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
@@ -129,7 +134,7 @@
     } else {
         [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
     }
-    STOP_ACTIVITY_INDICATOR;
+//    STOP_ACTIVITY_INDICATOR;
 }
 
 - (void)restoreCompletedTransactions {
@@ -147,16 +152,16 @@
     NSArray *products = response.products;
     proUpgradeProduct = [products count] == 1 ? [products objectAtIndex:0]  : nil;
     if (proUpgradeProduct) {
-        ALog(@"Product title: %@" , proUpgradeProduct.localizedTitle);
-        DLog(@"Product description: %@" , proUpgradeProduct.localizedDescription);
-        DLog(@"Product price: %@" , proUpgradeProduct.price);
+        NSLog(@"Product title: %@" , proUpgradeProduct.localizedTitle);
+        NSLog(@"Product description: %@" , proUpgradeProduct.localizedDescription);
+        NSLog(@"Product price: %@" , proUpgradeProduct.price);
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults setObject:proUpgradeProduct.price forKey:@"PRODUCT_PRICE"];
-        DLog(@"Product id: %@" , proUpgradeProduct.productIdentifier);
+        NSLog(@"Product id: %@" , proUpgradeProduct.productIdentifier);
     }
     
     for (NSString *invalidProductId in response.invalidProductIdentifiers) {
-        DLog(@"Invalid product id: %@" , invalidProductId);
+        NSLog(@"Invalid product id: %@" , invalidProductId);
     }
     
     if([self canMakePurchases])
@@ -165,15 +170,16 @@
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error{
     
-    DLog(@"%@",error);
-    [[ApplicationManager getInstance] showAlertForVC:nil withTitle:@"Error!" andMessage:@"Unable to connect with iTunes Store. Please try later."];
+    NSLog(@"Error! Unable to connect with iTunes Store. Please try later. %@",error);
+    
+//    [[ApplicationManager getInstance] showAlertForVC:nil withTitle:@"Error!" andMessage:@"Unable to connect with iTunes Store. Please try later."];
 }
 
 #pragma mark - SKPaymentTransactionObserver methods
 
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions {
     for (SKPaymentTransaction *transaction in transactions) {
-        DLog(@"tras %ld",(long)transaction.transactionState);
+        NSLog(@"tras %ld",(long)transaction.transactionState);
         switch (transaction.transactionState) {
             case SKPaymentTransactionStatePurchased:
                 [self completeTransaction:transaction];
@@ -191,26 +197,28 @@
 }
 
 - (void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error {
-    DLog(@"ERROR: %@", [error.userInfo objectForKey:@"NSLocalizedDescription"]);
+    NSLog(@"ERROR: %@", [error.userInfo objectForKey:@"NSLocalizedDescription"]);
     //[[ApplicationManager getInstance] showAlertForVC:nil withTitle:@"Oops!" andMessage:[error.userInfo objectForKey:@"NSLocalizedDescription"]];
-    UIAlertView *alert=[[UIAlertView alloc]
-                        initWithTitle:@"Sorry"
-                        message:@"Connection to iTunes Failed"
-                        delegate:nil
-                        cancelButtonTitle:@"Dismiss"
-                        otherButtonTitles:nil, nil];
-    [alert show];
+//    UIAlertView *alert=[[UIAlertView alloc]
+//                        initWithTitle:@"Sorry"
+//                        message:@"Connection to iTunes Failed"
+//                        delegate:nil
+//                        cancelButtonTitle:@"Dismiss"
+//                        otherButtonTitles:nil, nil];
+//    [alert show];
+    
+    
 }
 
 - (void) paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
 {
     NSMutableArray *purchasedItemIDs = [[NSMutableArray alloc] init];
-    DLog(@"received restored transactions: %lu", (unsigned long)queue.transactions.count);
+    NSLog(@"received restored transactions: %lu", (unsigned long)queue.transactions.count);
     for (SKPaymentTransaction *transaction in queue.transactions)
     {
         NSString *identityproductID = transaction.payment.productIdentifier;
         [purchasedItemIDs addObject:identityproductID];
-        DLog(@"%@",purchasedItemIDs);
+        NSLog(@"%@",purchasedItemIDs);
     }
 }
 
@@ -218,12 +226,12 @@
 #pragma mark Validating Receipts With the App Store
 
 -(BOOL)transcationReceipt:(SKPaymentTransaction *)transaction{
-    STOP_ACTIVITY_INDICATOR;
+//    STOP_ACTIVITY_INDICATOR;
     NSURL *receiptURL = [[NSBundle mainBundle] appStoreReceiptURL];
     NSData *reciptData = [NSData dataWithContentsOfURL:receiptURL];
     if (!reciptData) {
         /* No local receipt -- handle the error. */
-        DLog(@"NO transaction Receipt");
+        NSLog(@"NO transaction Receipt");
         return 0;
     } else {
         NSError *error;
@@ -249,6 +257,45 @@
         }
         return 0;
     }
+}
+
+#pragma mark rootCheck
+
+- (BOOL)rootCheck {
+#if TARGET_IPHONE_SIMULATOR
+    return NO;
+#endif
+    /* Check if device is Jailbroken */
+    NSArray *jailbrokenPath = [NSArray arrayWithObjects:
+                               @"/Applications/Cydia.app",
+                               @"/Applications/RockApp.app",
+                               @"/Applications/Icy.app",
+                               @"/usr/sbin/sshd",
+                               @"/usr/bin/sshd",
+                               @"/usr/libexec/sftp-server",
+                               @"/Applications/WinterBoard.app",
+                               @"/Applications/SBSettings.app",
+                               @"/Applications/MxTube.app",
+                               @"/Applications/IntelliScreen.app",
+                               @"/Library/MobileSubstrate/DynamicLibraries/Veency.plist",
+                               @"/Applications/FakeCarrier.app",
+                               @"/Library/MobileSubstrate/DynamicLibraries/LiveClock.plist",
+                               @"/private/var/lib/apt",
+                               @"/Applications/blackra1n.app",
+                               @"/private/var/stash",
+                               @"/private/var/mobile/Library/SBSettings/Themes",
+                               @"/System/Library/LaunchDaemons/com.ikey.bbot.plist",
+                               @"/System/Library/LaunchDaemons/com.saurik.Cydia.Startup.plist",
+                               @"/private/var/tmp/cydia.log",
+                               @"/private/var/lib/cydia", nil];
+    
+    BOOL rooted = NO;
+    for(NSString *string in jailbrokenPath)
+        if ([[NSFileManager defaultManager] fileExistsAtPath:string]) {
+            rooted=YES;
+            break;
+        }
+    return rooted;
 }
 
 @end

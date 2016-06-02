@@ -29,12 +29,12 @@
     return self;
 }
 
-- (void)showAlertForVC:(id)vc withTitle:(NSString*)title andMessage:(NSString*)message
-{
-    // Show Alert with title and message only
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-}
+//- (void)showAlertForVC:(id)vc withTitle:(NSString*)title andMessage:(NSString*)message
+//{
+////    // Show Alert with title and message only
+////    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+////    [alert show];
+//}
 
 - (void)logout {
     // Delete logged-in user objects

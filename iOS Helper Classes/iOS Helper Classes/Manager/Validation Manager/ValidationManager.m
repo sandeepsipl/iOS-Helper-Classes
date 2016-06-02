@@ -7,6 +7,7 @@
 //
 
 #import "ValidationManager.h"
+#import "NSString+Helper.h"
 
 @implementation ValidationManager
 
@@ -25,16 +26,16 @@
     return self;
 }
 
-- (BOOL)blankFieldValidation:(UITextField *)textfield {
-    if (![[textfield.text trim] isEqualToString:@""]) {
+- (BOOL)blankFieldValidation:(NSString *)textfield {
+    if (![[textfield trim] isEqualToString:@""]) {
         return TRUE;
     }
     return FALSE;
 }
 
-- (BOOL)checkPasswordStrength:(UITextField *)textfield {
-    if (![[textfield.text trim] isEqualToString:@""]) {
-        if (!([textfield.text length] < 8)) {
+- (BOOL)checkPasswordStrength:(NSString *)textfield {
+    if (![[textfield trim] isEqualToString:@""]) {
+        if (!([textfield length] < 8)) {
             return TRUE;
         }
     }
@@ -93,6 +94,12 @@
     NSPredicate *zipTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", zipRegex];
     
     return [zipTest evaluateWithObject:zipCodeStr];
+}
+
+- (NSDictionary*)getValidationMessageListFromPlist:(NSString *)plistName {
+    NSString *path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    return dict;
 }
 
 @end

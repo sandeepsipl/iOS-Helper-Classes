@@ -14,12 +14,15 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
 
 #import "NSData+Base64.h"
 #import "NSString+Helper.h"
-#import "ActivityViewController.h"
-#import "Constant.h"
+//#import "ActivityViewController.h"
+//#import "Constant.h"
+#import "NSMutableDictionary+Helper.h"
+#import "NSDate+Helper.h"
+#import "NSArray+Helper.h"
 
 #import "ApplicationManager.h"
 #import "IAPManager.h"

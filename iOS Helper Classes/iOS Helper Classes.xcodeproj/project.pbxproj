@@ -23,6 +23,9 @@
 		8C396BCE1CFD8F9E0096F3E3 /* ValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BCD1CFD8F9E0096F3E3 /* ValidationManager.m */; };
 		8C396BD21CFD92CC0096F3E3 /* ApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BD11CFD92CC0096F3E3 /* ApplicationManager.m */; };
 		8C396BD61CFD9A8B0096F3E3 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BD51CFD9A8B0096F3E3 /* ActivityViewController.m */; };
+		8C5FE5101D005DB000A29F8A /* NSArray+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE50F1D005DB000A29F8A /* NSArray+Helper.m */; };
+		8C5FE5131D005DB800A29F8A /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */; };
+		8C5FE5161D005DBD00A29F8A /* NSMutableDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,12 @@
 		8C396BD41CFD9A8B0096F3E3 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		8C396BD51CFD9A8B0096F3E3 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		8C396BD71CFD9B550096F3E3 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		8C5FE50E1D005DB000A29F8A /* NSArray+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Helper.h"; sourceTree = "<group>"; };
+		8C5FE50F1D005DB000A29F8A /* NSArray+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Helper.m"; sourceTree = "<group>"; };
+		8C5FE5111D005DB800A29F8A /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		8C5FE5141D005DBD00A29F8A /* NSMutableDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Helper.h"; sourceTree = "<group>"; };
+		8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +151,9 @@
 		324B28781C3E4EB400F51149 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8C5FE50B1D005D7A00A29F8A /* NSArray Helper */,
+				8C5FE50C1D005D7A00A29F8A /* NSDate Helper */,
+				8C5FE50D1D005D7A00A29F8A /* NSMutableDictionary Helper */,
 				324B287D1C3E674500F51149 /* NSData+Base64.h */,
 				324B287E1C3E674500F51149 /* NSData+Base64.m */,
 				324B28791C3E510200F51149 /* NSString+Helper.h */,
@@ -198,6 +210,33 @@
 				8C396BD11CFD92CC0096F3E3 /* ApplicationManager.m */,
 			);
 			path = "Application Manager";
+			sourceTree = "<group>";
+		};
+		8C5FE50B1D005D7A00A29F8A /* NSArray Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8C5FE50E1D005DB000A29F8A /* NSArray+Helper.h */,
+				8C5FE50F1D005DB000A29F8A /* NSArray+Helper.m */,
+			);
+			path = "NSArray Helper";
+			sourceTree = "<group>";
+		};
+		8C5FE50C1D005D7A00A29F8A /* NSDate Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8C5FE5111D005DB800A29F8A /* NSDate+Helper.h */,
+				8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */,
+			);
+			path = "NSDate Helper";
+			sourceTree = "<group>";
+		};
+		8C5FE50D1D005D7A00A29F8A /* NSMutableDictionary Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8C5FE5141D005DBD00A29F8A /* NSMutableDictionary+Helper.h */,
+				8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */,
+			);
+			path = "NSMutableDictionary Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +341,13 @@
 			files = (
 				8C396BC81CFD8F800096F3E3 /* IAPManager.m in Sources */,
 				8C396BCB1CFD8F8F0096F3E3 /* LocationManager.m in Sources */,
+				8C5FE5161D005DBD00A29F8A /* NSMutableDictionary+Helper.m in Sources */,
 				324B285B1C3E4E5B00F51149 /* ViewController.m in Sources */,
 				324B28581C3E4E5B00F51149 /* AppDelegate.m in Sources */,
 				8C396BCE1CFD8F9E0096F3E3 /* ValidationManager.m in Sources */,
+				8C5FE5131D005DB800A29F8A /* NSDate+Helper.m in Sources */,
 				8C396BD21CFD92CC0096F3E3 /* ApplicationManager.m in Sources */,
+				8C5FE5101D005DB000A29F8A /* NSArray+Helper.m in Sources */,
 				324B287F1C3E674500F51149 /* NSData+Base64.m in Sources */,
 				324B28551C3E4E5B00F51149 /* main.m in Sources */,
 				324B287B1C3E510200F51149 /* NSString+Helper.m in Sources */,

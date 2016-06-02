@@ -47,6 +47,7 @@
 }
 
 - (void)loadStore:(id)vc forProduct:(NSString*)productName{
+    
     if([[ApplicationManager getInstance] rootCheck]){
         return;
     }

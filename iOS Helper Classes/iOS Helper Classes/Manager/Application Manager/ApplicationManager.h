@@ -20,7 +20,7 @@
 
 + (ApplicationManager*)getInstance;
 
-- (void)showAlertForVC:(id)vc withTitle:(NSString*)title andMessage:(NSString*)message;
+//- (void)showAlertForVC:(id)vc withTitle:(NSString*)title andMessage:(NSString*)message;
 - (void)logout;
 - (BOOL)rootCheck;
 

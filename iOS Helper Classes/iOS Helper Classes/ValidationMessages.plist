@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NoIAPProductFound_Message</key>
+	<string>&quot;No product found or product is invalid.&quot;</string>
+	<key>iTunesStoreConnectionFailure_Message</key>
+	<string>&quot;Unable to connect with iTunes Store. Please try later.&quot;</string>
+	<key>LocationServicesDisabled_Message</key>
+	<string>&quot;You currently have all location services for this device disabled. If you proceed, you will be showing past informations. To enable, Settings-&gt;Location-&gt;location services-&gt;on&quot;</string>
+	<key>LocationServicesDisables_Title</key>
+	<string>&quot;Location Services Disabled&quot;</string>
+	<key>EnableBackgroundLocation_Message</key>
+	<string>&quot;To use background location you must turn on &apos;Always&apos; in the Location Services Settings&quot;</string>
+	<key>EnableBackgroundLocation_Title</key>
+	<string>Background location is not enabled</string>
+	<key>GetLocationFailure_Message</key>
+	<string>&quot;Failed to Get Your Location&quot;</string>
+	<key>AlphanumericUsername_Message</key>
+	<string>&quot;Username should take alphanumeric characters.&quot;</string>
+	<key>UsernameMissing_Message</key>
+	<string>&quot;Please enter your username.&quot;</string>
+	<key>PasswordMissing_Message</key>
+	<string>&quot;Please enter your password.&quot;</string>
+	<key>EmailMissing_Message</key>
+	<string>&quot;Please enter your email.&quot;</string>
+	<key>SomethingWentWrong_Message</key>
+	<string>&quot;Something went wrong.&quot;</string>
+	<key>BlankField_Message</key>
+	<string>&quot;Fields cannot be blank.&quot;</string>
+	<key>PasswordLengthFailure_Message</key>
+	<string>&quot;Your password should contain at least 8 characters.&quot;</string>
+	<key>iTunesConnectionFailure_Message</key>
+	<string>&quot;Connection to iTunes Failed&quot;</string>
+	<key>EmailVerificationFailure_Message</key>
+	<string>&quot;Your e-mail address looks strange. Please enter a valid e-mail address.&quot;</string>
+	<key>EmailVerificationFailure_Title</key>
+	<string>&quot;Invalid Email!&quot;</string>
+	<key>InternetConnectionFailure_Message</key>
+	<string>&quot;Please check your internet connection and try again later.&quot;</string>
+	<key>RegisterSuccess_Title</key>
+	<string>Successfully Registered</string>
+	<key>LoginSuccess_Title</key>
+	<string>Successfully Logged In</string>
+	<key>Success_Title</key>
+	<string>&quot;Success!&quot;</string>
+	<key>Error_Title2</key>
+	<string>&quot;Oops!&quot;</string>
+	<key>Error_Title1</key>
+	<string>&quot;Error!&quot;</string>
+</dict>
+</plist>

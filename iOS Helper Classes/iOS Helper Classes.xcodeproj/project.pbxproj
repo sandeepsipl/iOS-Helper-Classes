@@ -26,6 +26,27 @@
 		8C5FE5101D005DB000A29F8A /* NSArray+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE50F1D005DB000A29F8A /* NSArray+Helper.m */; };
 		8C5FE5131D005DB800A29F8A /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */; };
 		8C5FE5161D005DBD00A29F8A /* NSMutableDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */; };
+		8C7CADCB1D1003DC002E5805 /* ValidationMessages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C7CADCA1D1003DC002E5805 /* ValidationMessages.plist */; };
+		8C7CADCC1D1040EF002E5805 /* ApplicationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C396BD01CFD92CC0096F3E3 /* ApplicationManager.h */; };
+		8C7CADCD1D1040F4002E5805 /* ApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BD11CFD92CC0096F3E3 /* ApplicationManager.m */; };
+		8C7CADDC1D1043B3002E5805 /* iOSHelperClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C7CADDB1D104383002E5805 /* iOSHelperClass.h */; };
+		8CFB97F11D01446A003D7B67 /* iOSHelperClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB97F01D01446A003D7B67 /* iOSHelperClasses.m */; };
+		8CFB98351D01676F003D7B67 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287E1C3E674500F51149 /* NSData+Base64.m */; };
+		8CFB98361D01676F003D7B67 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287A1C3E510200F51149 /* NSString+Helper.m */; };
+		8CFB98371D016775003D7B67 /* NSData+Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 324B287D1C3E674500F51149 /* NSData+Base64.h */; };
+		8CFB98381D016775003D7B67 /* NSString+Helper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 324B28791C3E510200F51149 /* NSString+Helper.h */; };
+		8CFB98391D016797003D7B67 /* NSArray+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE50F1D005DB000A29F8A /* NSArray+Helper.m */; };
+		8CFB983A1D01679D003D7B67 /* NSArray+Helper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C5FE50E1D005DB000A29F8A /* NSArray+Helper.h */; };
+		8CFB983B1D0167B2003D7B67 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */; };
+		8CFB983C1D0167B8003D7B67 /* NSDate+Helper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C5FE5111D005DB800A29F8A /* NSDate+Helper.h */; };
+		8CFB983D1D016850003D7B67 /* NSMutableDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */; };
+		8CFB983E1D016857003D7B67 /* NSMutableDictionary+Helper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C5FE5141D005DBD00A29F8A /* NSMutableDictionary+Helper.h */; };
+		8CFB98411D0168E6003D7B67 /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BC71CFD8F800096F3E3 /* IAPManager.m */; };
+		8CFB98421D0168EA003D7B67 /* IAPManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C396BC61CFD8F800096F3E3 /* IAPManager.h */; };
+		8CFB98431D016C59003D7B67 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BCA1CFD8F8F0096F3E3 /* LocationManager.m */; };
+		8CFB98441D016C5E003D7B67 /* LocationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C396BC91CFD8F8F0096F3E3 /* LocationManager.h */; };
+		8CFB98451D016C86003D7B67 /* ValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BCD1CFD8F9E0096F3E3 /* ValidationManager.m */; };
+		8CFB98461D016C8C003D7B67 /* ValidationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C396BCC1CFD8F9E0096F3E3 /* ValidationManager.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +58,28 @@
 			remoteInfo = "iOS Helper Classes";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CFB97EA1D01446A003D7B67 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8C7CADDC1D1043B3002E5805 /* iOSHelperClass.h in CopyFiles */,
+				8C7CADCC1D1040EF002E5805 /* ApplicationManager.h in CopyFiles */,
+				8CFB98461D016C8C003D7B67 /* ValidationManager.h in CopyFiles */,
+				8CFB98441D016C5E003D7B67 /* LocationManager.h in CopyFiles */,
+				8CFB98421D0168EA003D7B67 /* IAPManager.h in CopyFiles */,
+				8CFB983E1D016857003D7B67 /* NSMutableDictionary+Helper.h in CopyFiles */,
+				8CFB983C1D0167B8003D7B67 /* NSDate+Helper.h in CopyFiles */,
+				8CFB983A1D01679D003D7B67 /* NSArray+Helper.h in CopyFiles */,
+				8CFB98371D016775003D7B67 /* NSData+Base64.h in CopyFiles */,
+				8CFB98381D016775003D7B67 /* NSString+Helper.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		324B28501C3E4E5B00F51149 /* iOS Helper Classes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Helper Classes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +117,12 @@
 		8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		8C5FE5141D005DBD00A29F8A /* NSMutableDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Helper.h"; sourceTree = "<group>"; };
 		8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Helper.m"; sourceTree = "<group>"; };
+		8C7CADCA1D1003DC002E5805 /* ValidationMessages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ValidationMessages.plist; sourceTree = "<group>"; };
+		8C7CADDB1D104383002E5805 /* iOSHelperClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSHelperClass.h; sourceTree = "<group>"; };
+		8CFB97EC1D01446A003D7B67 /* libiOSHelperClasses.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSHelperClasses.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFB97EE1D01446A003D7B67 /* iOSHelperClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSHelperClasses.h; sourceTree = "<group>"; };
+		8CFB97F01D01446A003D7B67 /* iOSHelperClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSHelperClasses.m; sourceTree = "<group>"; };
+		8CFB98141D0147E1003D7B67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,14 +140,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CFB97E91D01446A003D7B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		324B28471C3E4E5B00F51149 = {
 			isa = PBXGroup;
 			children = (
+				8CFB98141D0147E1003D7B67 /* UIKit.framework */,
 				324B28521C3E4E5B00F51149 /* iOS Helper Classes */,
 				324B286C1C3E4E5B00F51149 /* iOS Helper ClassesTests */,
+				8CFB97ED1D01446A003D7B67 /* iOSHelperClasses */,
 				324B28511C3E4E5B00F51149 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +166,7 @@
 			children = (
 				324B28501C3E4E5B00F51149 /* iOS Helper Classes.app */,
 				324B28691C3E4E5B00F51149 /* iOS Helper ClassesTests.xctest */,
+				8CFB97EC1D01446A003D7B67 /* libiOSHelperClasses.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +185,7 @@
 				324B28611C3E4E5B00F51149 /* LaunchScreen.storyboard */,
 				324B28641C3E4E5B00F51149 /* Info.plist */,
 				324B28531C3E4E5B00F51149 /* Supporting Files */,
+				8C7CADCA1D1003DC002E5805 /* ValidationMessages.plist */,
 			);
 			path = "iOS Helper Classes";
 			sourceTree = "<group>";
@@ -135,6 +195,7 @@
 			children = (
 				324B28541C3E4E5B00F51149 /* main.m */,
 				8C396BD31CFD95C20096F3E3 /* iOS-Helper-Classes.pch */,
+				8C7CADDB1D104383002E5805 /* iOSHelperClass.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,6 +300,15 @@
 			path = "NSMutableDictionary Helper";
 			sourceTree = "<group>";
 		};
+		8CFB97ED1D01446A003D7B67 /* iOSHelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB97EE1D01446A003D7B67 /* iOSHelperClasses.h */,
+				8CFB97F01D01446A003D7B67 /* iOSHelperClasses.m */,
+			);
+			path = iOSHelperClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +347,23 @@
 			productReference = 324B28691C3E4E5B00F51149 /* iOS Helper ClassesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8CFB97EB1D01446A003D7B67 /* iOSHelperClasses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFB97F41D01446A003D7B67 /* Build configuration list for PBXNativeTarget "iOSHelperClasses" */;
+			buildPhases = (
+				8CFB97E81D01446A003D7B67 /* Sources */,
+				8CFB97E91D01446A003D7B67 /* Frameworks */,
+				8CFB97EA1D01446A003D7B67 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSHelperClasses;
+			productName = iOSHelperClasses;
+			productReference = 8CFB97EC1D01446A003D7B67 /* libiOSHelperClasses.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -292,6 +379,9 @@
 					324B28681C3E4E5B00F51149 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 324B284F1C3E4E5B00F51149;
+					};
+					8CFB97EB1D01446A003D7B67 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -310,6 +400,7 @@
 			targets = (
 				324B284F1C3E4E5B00F51149 /* iOS Helper Classes */,
 				324B28681C3E4E5B00F51149 /* iOS Helper ClassesTests */,
+				8CFB97EB1D01446A003D7B67 /* iOSHelperClasses */,
 			);
 		};
 /* End PBXProject section */
@@ -320,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324B28631C3E4E5B00F51149 /* LaunchScreen.storyboard in Resources */,
+				8C7CADCB1D1003DC002E5805 /* ValidationMessages.plist in Resources */,
 				324B28601C3E4E5B00F51149 /* Assets.xcassets in Resources */,
 				324B285E1C3E4E5B00F51149 /* Main.storyboard in Resources */,
 			);
@@ -362,6 +454,23 @@
 				324B286E1C3E4E5B00F51149 /* iOS_Helper_ClassesTests.m in Sources */,
 				324B287C1C3E510200F51149 /* NSString+Helper.m in Sources */,
 				324B28801C3E674500F51149 /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFB97E81D01446A003D7B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7CADCD1D1040F4002E5805 /* ApplicationManager.m in Sources */,
+				8CFB98451D016C86003D7B67 /* ValidationManager.m in Sources */,
+				8CFB98431D016C59003D7B67 /* LocationManager.m in Sources */,
+				8CFB98411D0168E6003D7B67 /* IAPManager.m in Sources */,
+				8CFB983D1D016850003D7B67 /* NSMutableDictionary+Helper.m in Sources */,
+				8CFB983B1D0167B2003D7B67 /* NSDate+Helper.m in Sources */,
+				8CFB98391D016797003D7B67 /* NSArray+Helper.m in Sources */,
+				8CFB98351D01676F003D7B67 /* NSData+Base64.m in Sources */,
+				8CFB98361D01676F003D7B67 /* NSString+Helper.m in Sources */,
+				8CFB97F11D01446A003D7B67 /* iOSHelperClasses.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +632,28 @@
 			};
 			name = Release;
 		};
+		8CFB97F21D01446A003D7B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8CFB97F31D01446A003D7B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,6 +680,15 @@
 			buildConfigurations = (
 				324B28761C3E4E5B00F51149 /* Debug */,
 				324B28771C3E4E5B00F51149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFB97F41D01446A003D7B67 /* Build configuration list for PBXNativeTarget "iOSHelperClasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFB97F21D01446A003D7B67 /* Debug */,
+				8CFB97F31D01446A003D7B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

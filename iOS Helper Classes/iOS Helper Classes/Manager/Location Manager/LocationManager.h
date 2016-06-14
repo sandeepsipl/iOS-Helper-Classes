@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface LocationManager : NSObject<CLLocationManagerDelegate,UIAlertViewDelegate>{
+@interface LocationManager : NSObject<CLLocationManagerDelegate>{
     CLLocationManager *locationManager;
 }
 
@@ -18,5 +18,8 @@
 @property (strong, nonatomic) CLLocation *currentLocation;
 
 + (LocationManager*)getInstance;
+
+- (void) getCurrentLocation;
+- (void) stopGettingCurrentLocation;
 
 @end

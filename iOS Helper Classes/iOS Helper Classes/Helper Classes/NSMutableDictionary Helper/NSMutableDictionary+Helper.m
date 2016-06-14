@@ -11,7 +11,7 @@
 @implementation NSMutableDictionary (Helper)
 
 -(void)setObjectIfNotNil:(id)object ForKey:(NSString*)key {
-    if (object!=nil) {
+    if (object != (id)[NSNull null]) {
         [self setObject:object forKey:key];
     }
 }

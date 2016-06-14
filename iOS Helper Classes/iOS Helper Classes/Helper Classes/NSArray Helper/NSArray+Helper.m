@@ -17,8 +17,6 @@
         if ([[self objectAtIndex:0] isKindOfClass:[NSString class]]) {
             NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:(!desc) selector:@selector(localizedCaseInsensitiveCompare:)];
             return [self sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-            
-//            return [self sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
         }
         else if ([[self objectAtIndex:0] isKindOfClass:[NSDictionary class]]) {
             NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:key  ascending:(!desc) selector:@selector(localizedCaseInsensitiveCompare:)];

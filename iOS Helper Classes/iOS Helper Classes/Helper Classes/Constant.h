@@ -53,9 +53,9 @@
 // ALog always displays output regardless of the DEBUG setting
 #define ALog(fmt, ...) //NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
-#pragma mark - Activity Indicator Object
-#define START_ACTIVITY_INDICATOR [[ActivityViewController sharedInstance] startIndicator]
-#define STOP_ACTIVITY_INDICATOR  [[ActivityViewController sharedInstance] stopIndicator]
+//#pragma mark - Activity Indicator Object
+//#define START_ACTIVITY_INDICATOR [[ActivityViewController sharedInstance] startIndicator]
+//#define STOP_ACTIVITY_INDICATOR  [[ActivityViewController sharedInstance] stopIndicator]
 
 // Application Delegate Object
 #pragma mark - Application Delegate Object

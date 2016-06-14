@@ -6,7 +6,8 @@
 //  Copyright © 2016 Systematix Infotech Pvt. Ltd. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonDigest.h>
 
 @interface NSString (Helpers)

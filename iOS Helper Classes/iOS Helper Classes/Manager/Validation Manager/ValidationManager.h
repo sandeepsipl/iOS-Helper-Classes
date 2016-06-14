@@ -13,10 +13,11 @@
 + (ValidationManager*)getInstance;
 
 
-- (BOOL)blankFieldValidation:(UITextField *)textfield;
-- (BOOL)checkPasswordStrength:(UITextField *)textfield;
+- (BOOL)blankFieldValidation:(NSString *)textfield;
+- (BOOL)checkPasswordStrength:(NSString *)textfield;
 - (BOOL)emailVerification:(NSString *)emailStr;
 - (BOOL)validatePhone:(NSString *)phoneNumber;
 - (BOOL)zipcodeVerification:(NSString *)zipCodeStr;
+- (NSDictionary*)getValidationMessageListFromPlist:(NSString *)plistName;
 
 @end

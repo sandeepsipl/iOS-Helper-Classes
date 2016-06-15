@@ -51,7 +51,7 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setObject:token forKey:@"devicetoken"];
     
-    DLog(@"devicetoken---%@", token);
+    NSLog(@"devicetoken---%@", token);
 }
 
 @end

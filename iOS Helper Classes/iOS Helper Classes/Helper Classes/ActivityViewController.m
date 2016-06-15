@@ -11,7 +11,6 @@
 @interface ActivityViewController ()
 
 @property(strong, nonatomic) UIActivityIndicatorView *activityView;
-@property(retain) AppDelegate *delegate;
 @property(strong, nonatomic) UIView *view;
 
 @end
@@ -48,14 +47,14 @@ static ActivityViewController *sharedInstance = nil;
 }
 
 -(void)makeVisible {
-    self.delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    self.view = [[UIView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    self.activityView.center = self.view.center;
-    [self.view addSubview:self.activityView];
-    self.view.backgroundColor = [UIColor blackColor];
-    self.view.alpha = 0.7;
-    [self.delegate.window addSubview:self.view];
+//    self.delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+//    self.view = [[UIView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//    self.activityView.center = self.view.center;
+//    [self.view addSubview:self.activityView];
+//    self.view.backgroundColor = [UIColor blackColor];
+//    self.view.alpha = 0.7;
+//    [self.delegate.window addSubview:self.view];
 }
 
 @end

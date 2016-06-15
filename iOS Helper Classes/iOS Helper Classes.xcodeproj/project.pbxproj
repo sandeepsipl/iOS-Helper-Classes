@@ -26,11 +26,13 @@
 		8C5FE5101D005DB000A29F8A /* NSArray+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE50F1D005DB000A29F8A /* NSArray+Helper.m */; };
 		8C5FE5131D005DB800A29F8A /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */; };
 		8C5FE5161D005DBD00A29F8A /* NSMutableDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */; };
+		8C79630E1D1152B500C20A0D /* FilesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C79630D1D1152B500C20A0D /* FilesManager.m */; };
+		8C79630F1D1155AC00C20A0D /* FilesManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C79630C1D1152B500C20A0D /* FilesManager.h */; };
+		8C7963101D1155B100C20A0D /* FilesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C79630D1D1152B500C20A0D /* FilesManager.m */; };
 		8C7CADCB1D1003DC002E5805 /* ValidationMessages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C7CADCA1D1003DC002E5805 /* ValidationMessages.plist */; };
 		8C7CADCC1D1040EF002E5805 /* ApplicationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C396BD01CFD92CC0096F3E3 /* ApplicationManager.h */; };
 		8C7CADCD1D1040F4002E5805 /* ApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BD11CFD92CC0096F3E3 /* ApplicationManager.m */; };
 		8C7CADDC1D1043B3002E5805 /* iOSHelperClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C7CADDB1D104383002E5805 /* iOSHelperClass.h */; };
-		8CFB97F11D01446A003D7B67 /* iOSHelperClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB97F01D01446A003D7B67 /* iOSHelperClasses.m */; };
 		8CFB98351D01676F003D7B67 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287E1C3E674500F51149 /* NSData+Base64.m */; };
 		8CFB98361D01676F003D7B67 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287A1C3E510200F51149 /* NSString+Helper.m */; };
 		8CFB98371D016775003D7B67 /* NSData+Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 324B287D1C3E674500F51149 /* NSData+Base64.h */; };
@@ -66,6 +68,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8C79630F1D1155AC00C20A0D /* FilesManager.h in CopyFiles */,
 				8C7CADDC1D1043B3002E5805 /* iOSHelperClass.h in CopyFiles */,
 				8C7CADCC1D1040EF002E5805 /* ApplicationManager.h in CopyFiles */,
 				8CFB98461D016C8C003D7B67 /* ValidationManager.h in CopyFiles */,
@@ -117,11 +120,11 @@
 		8C5FE5121D005DB800A29F8A /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		8C5FE5141D005DBD00A29F8A /* NSMutableDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Helper.h"; sourceTree = "<group>"; };
 		8C5FE5151D005DBD00A29F8A /* NSMutableDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Helper.m"; sourceTree = "<group>"; };
+		8C79630C1D1152B500C20A0D /* FilesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesManager.h; sourceTree = "<group>"; };
+		8C79630D1D1152B500C20A0D /* FilesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesManager.m; sourceTree = "<group>"; };
 		8C7CADCA1D1003DC002E5805 /* ValidationMessages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ValidationMessages.plist; sourceTree = "<group>"; };
 		8C7CADDB1D104383002E5805 /* iOSHelperClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSHelperClass.h; sourceTree = "<group>"; };
 		8CFB97EC1D01446A003D7B67 /* libiOSHelperClasses.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSHelperClasses.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CFB97EE1D01446A003D7B67 /* iOSHelperClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSHelperClasses.h; sourceTree = "<group>"; };
-		8CFB97F01D01446A003D7B67 /* iOSHelperClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSHelperClasses.m; sourceTree = "<group>"; };
 		8CFB98141D0147E1003D7B67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -156,7 +159,6 @@
 				8CFB98141D0147E1003D7B67 /* UIKit.framework */,
 				324B28521C3E4E5B00F51149 /* iOS Helper Classes */,
 				324B286C1C3E4E5B00F51149 /* iOS Helper ClassesTests */,
-				8CFB97ED1D01446A003D7B67 /* iOSHelperClasses */,
 				324B28511C3E4E5B00F51149 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -229,6 +231,7 @@
 		8C396BC21CFD8F2F0096F3E3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				8C79630B1D1152A100C20A0D /* File Manager */,
 				8C396BCF1CFD92BB0096F3E3 /* Application Manager */,
 				8C396BC31CFD8F5D0096F3E3 /* IAP Manager */,
 				8C396BC41CFD8F5D0096F3E3 /* Location Manager */,
@@ -300,13 +303,13 @@
 			path = "NSMutableDictionary Helper";
 			sourceTree = "<group>";
 		};
-		8CFB97ED1D01446A003D7B67 /* iOSHelperClasses */ = {
+		8C79630B1D1152A100C20A0D /* File Manager */ = {
 			isa = PBXGroup;
 			children = (
-				8CFB97EE1D01446A003D7B67 /* iOSHelperClasses.h */,
-				8CFB97F01D01446A003D7B67 /* iOSHelperClasses.m */,
+				8C79630C1D1152B500C20A0D /* FilesManager.h */,
+				8C79630D1D1152B500C20A0D /* FilesManager.m */,
 			);
-			path = iOSHelperClasses;
+			path = "File Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C396BC81CFD8F800096F3E3 /* IAPManager.m in Sources */,
+				8C79630E1D1152B500C20A0D /* FilesManager.m in Sources */,
 				8C396BCB1CFD8F8F0096F3E3 /* LocationManager.m in Sources */,
 				8C5FE5161D005DBD00A29F8A /* NSMutableDictionary+Helper.m in Sources */,
 				324B285B1C3E4E5B00F51149 /* ViewController.m in Sources */,
@@ -461,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7963101D1155B100C20A0D /* FilesManager.m in Sources */,
 				8C7CADCD1D1040F4002E5805 /* ApplicationManager.m in Sources */,
 				8CFB98451D016C86003D7B67 /* ValidationManager.m in Sources */,
 				8CFB98431D016C59003D7B67 /* LocationManager.m in Sources */,
@@ -470,7 +475,6 @@
 				8CFB98391D016797003D7B67 /* NSArray+Helper.m in Sources */,
 				8CFB98351D01676F003D7B67 /* NSData+Base64.m in Sources */,
 				8CFB98361D01676F003D7B67 /* NSString+Helper.m in Sources */,
-				8CFB97F11D01446A003D7B67 /* iOSHelperClasses.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

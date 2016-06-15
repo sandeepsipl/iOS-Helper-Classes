@@ -20,5 +20,6 @@
 #import "IAPManager.h"
 #import "LocationManager.h"
 #import "ValidationManager.h"
+#import "FilesManager.h"
 
 #endif /* iOSHelperClass_h */

@@ -21,6 +21,7 @@
 //#import "ActivityViewController.h"
 //#import "Constant.h"
 #import "NSMutableDictionary+Helper.h"
+#import "NSDictionary+BVJSONString.h"
 #import "NSDate+Helper.h"
 #import "NSArray+Helper.h"
 

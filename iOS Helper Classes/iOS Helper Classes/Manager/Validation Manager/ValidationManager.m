@@ -102,4 +102,15 @@
     return dict;
 }
 
+- (NSDictionary*)getValidationMessageListFromJSON:(NSString *)jsonFileName {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:jsonFileName ofType:@"json"];
+    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
+    
+    NSError *error = nil;
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+//    NSLog(@"%@", jsonDict);
+    return jsonDict;
+    
+}
+
 @end

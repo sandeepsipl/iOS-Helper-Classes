@@ -19,5 +19,6 @@
 - (BOOL)validatePhone:(NSString *)phoneNumber;
 - (BOOL)zipcodeVerification:(NSString *)zipCodeStr;
 - (NSDictionary*)getValidationMessageListFromPlist:(NSString *)plistName;
+- (NSDictionary*)getValidationMessageListFromJSON:(NSString *)jsonFileName;
 
 @end

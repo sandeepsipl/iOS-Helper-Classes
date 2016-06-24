@@ -14,6 +14,7 @@
 #import "NSData+Base64.h"
 #import "NSString+Helper.h"
 #import "NSMutableDictionary+Helper.h"
+#import "NSDictionary+BVJSONString.h"
 #import "NSDate+Helper.h"
 #import "NSArray+Helper.h"
 #import "ApplicationManager.h"

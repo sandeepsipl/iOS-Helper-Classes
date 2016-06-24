@@ -18,6 +18,10 @@
 		324B287C1C3E510200F51149 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287A1C3E510200F51149 /* NSString+Helper.m */; };
 		324B287F1C3E674500F51149 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287E1C3E674500F51149 /* NSData+Base64.m */; };
 		324B28801C3E674500F51149 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B287E1C3E674500F51149 /* NSData+Base64.m */; };
+		8C0E68691D1CFE7200168B16 /* NSDictionary+BVJSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0E68681D1CFE7200168B16 /* NSDictionary+BVJSONString.m */; };
+		8C0E686B1D1D025D00168B16 /* ValidationMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C0E686A1D1D025D00168B16 /* ValidationMessages.json */; };
+		8C0E686C1D1D039300168B16 /* NSDictionary+BVJSONString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C0E68671D1CFE7200168B16 /* NSDictionary+BVJSONString.h */; };
+		8C0E686D1D1D039C00168B16 /* NSDictionary+BVJSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0E68681D1CFE7200168B16 /* NSDictionary+BVJSONString.m */; };
 		8C396BC81CFD8F800096F3E3 /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BC71CFD8F800096F3E3 /* IAPManager.m */; };
 		8C396BCB1CFD8F8F0096F3E3 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BCA1CFD8F8F0096F3E3 /* LocationManager.m */; };
 		8C396BCE1CFD8F9E0096F3E3 /* ValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C396BCD1CFD8F9E0096F3E3 /* ValidationManager.m */; };
@@ -68,6 +72,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8C0E686C1D1D039300168B16 /* NSDictionary+BVJSONString.h in CopyFiles */,
 				8C79630F1D1155AC00C20A0D /* FilesManager.h in CopyFiles */,
 				8C7CADDC1D1043B3002E5805 /* iOSHelperClass.h in CopyFiles */,
 				8C7CADCC1D1040EF002E5805 /* ApplicationManager.h in CopyFiles */,
@@ -102,6 +107,9 @@
 		324B287A1C3E510200F51149 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
 		324B287D1C3E674500F51149 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		324B287E1C3E674500F51149 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		8C0E68671D1CFE7200168B16 /* NSDictionary+BVJSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BVJSONString.h"; sourceTree = "<group>"; };
+		8C0E68681D1CFE7200168B16 /* NSDictionary+BVJSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BVJSONString.m"; sourceTree = "<group>"; };
+		8C0E686A1D1D025D00168B16 /* ValidationMessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidationMessages.json; sourceTree = "<group>"; };
 		8C396BC61CFD8F800096F3E3 /* IAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPManager.h; sourceTree = "<group>"; };
 		8C396BC71CFD8F800096F3E3 /* IAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPManager.m; sourceTree = "<group>"; };
 		8C396BC91CFD8F8F0096F3E3 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
@@ -188,6 +196,7 @@
 				324B28641C3E4E5B00F51149 /* Info.plist */,
 				324B28531C3E4E5B00F51149 /* Supporting Files */,
 				8C7CADCA1D1003DC002E5805 /* ValidationMessages.plist */,
+				8C0E686A1D1D025D00168B16 /* ValidationMessages.json */,
 			);
 			path = "iOS Helper Classes";
 			sourceTree = "<group>";
@@ -214,6 +223,7 @@
 		324B28781C3E4EB400F51149 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8C0E68631D1CFE1000168B16 /* NSDictionary+Category */,
 				8C5FE50B1D005D7A00A29F8A /* NSArray Helper */,
 				8C5FE50C1D005D7A00A29F8A /* NSDate Helper */,
 				8C5FE50D1D005D7A00A29F8A /* NSMutableDictionary Helper */,
@@ -226,6 +236,15 @@
 				8C396BD71CFD9B550096F3E3 /* Constant.h */,
 			);
 			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		8C0E68631D1CFE1000168B16 /* NSDictionary+Category */ = {
+			isa = PBXGroup;
+			children = (
+				8C0E68671D1CFE7200168B16 /* NSDictionary+BVJSONString.h */,
+				8C0E68681D1CFE7200168B16 /* NSDictionary+BVJSONString.m */,
+			);
+			path = "NSDictionary+Category";
 			sourceTree = "<group>";
 		};
 		8C396BC21CFD8F2F0096F3E3 /* Manager */ = {
@@ -417,6 +436,7 @@
 				8C7CADCB1D1003DC002E5805 /* ValidationMessages.plist in Resources */,
 				324B28601C3E4E5B00F51149 /* Assets.xcassets in Resources */,
 				324B285E1C3E4E5B00F51149 /* Main.storyboard in Resources */,
+				8C0E686B1D1D025D00168B16 /* ValidationMessages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +465,7 @@
 				8C396BD21CFD92CC0096F3E3 /* ApplicationManager.m in Sources */,
 				8C5FE5101D005DB000A29F8A /* NSArray+Helper.m in Sources */,
 				324B287F1C3E674500F51149 /* NSData+Base64.m in Sources */,
+				8C0E68691D1CFE7200168B16 /* NSDictionary+BVJSONString.m in Sources */,
 				324B28551C3E4E5B00F51149 /* main.m in Sources */,
 				324B287B1C3E510200F51149 /* NSString+Helper.m in Sources */,
 				8C396BD61CFD9A8B0096F3E3 /* ActivityViewController.m in Sources */,
@@ -465,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0E686D1D1D039C00168B16 /* NSDictionary+BVJSONString.m in Sources */,
 				8C7963101D1155B100C20A0D /* FilesManager.m in Sources */,
 				8C7CADCD1D1040F4002E5805 /* ApplicationManager.m in Sources */,
 				8CFB98451D016C86003D7B67 /* ValidationManager.m in Sources */,

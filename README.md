@@ -1,7 +1,24 @@
 # iOS-Helper-Classes
-iOSHelperClasses is a library that includes some helper and manager classes which provides some convenience methods.
+iOSHelperClasses is a library for iOS that includes many helper classes which provides some convenience methods which you need in almost every project.
 
-List of classes included:
+##How To Get Started
+
+It is very easy to use this library. You just need to clone the project and compile it for the iOS platform. It will generate the file libiOSHelperClasses.a, you need to include it in your project and import iOSHelperClass.h
+
+##List of Helper classes:
+
+1. NSData
+2. NSString
+3. NSMutableDictionary
+4. NSDate
+5. NSArray
+6. ApplicationManager
+7. InAppPurchaseManager
+8. LocationManager
+9. ValidationManager
+10. FilesManager
+
+##Methods
 
 1. NSData Helper
 

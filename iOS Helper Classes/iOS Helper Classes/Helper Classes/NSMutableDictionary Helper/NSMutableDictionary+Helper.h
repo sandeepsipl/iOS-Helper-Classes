@@ -13,12 +13,25 @@
 -(void)setObjectIfNotNil:(id)object ForKey:(NSString*)aKey;
 -(id) getObjectForKey:(NSString *)aKey;
 -(NSString*)stringFromKey:(NSString*)key;
--(NSNumber*)intFromKey:(NSString*)key;
--(NSNumber*)doubleFromKey:(NSString*)key;
+-(int)intFromKey:(NSString*)key;
+-(double)doubleFromKey:(NSString*)key;
 -(BOOL)boolForKey:(NSString *)key;
 -(void)setFloat:(float)value forKey:(NSString *)key;
 -(void)setDouble:(double)value forKey:(NSString *)key;
 -(void)setBool:(BOOL)value forKey:(NSString *)key;
 -(void)setInt:(int)value forKey:(NSString *)key;
+- (float)floatForKey:(id)key;
+
+@end
+
+
+@interface NSObject (NSObject_WhatIsHelper)
+
+- (BOOL)isDict;
+- (BOOL)isArray;
+- (BOOL)isString;
+- (BOOL)isNull;
+- (BOOL)isNumber;
+- (BOOL)isData;
 
 @end

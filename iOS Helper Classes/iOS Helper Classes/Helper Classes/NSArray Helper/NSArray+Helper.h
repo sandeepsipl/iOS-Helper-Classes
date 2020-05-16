@@ -10,6 +10,10 @@
 
 @interface NSArray (Helper)
 
--(NSArray*)sortedArrayByKey:(NSString*)key isDesc:(BOOL)desc;
+- (NSArray*)sortedArrayByKey:(NSString*)key isDesc:(BOOL)desc;
+
+- (id)safeObjectAtIndex:(NSUInteger)index;
+
+- (NSArray *)shuffled;
 
 @end

@@ -30,12 +30,22 @@
     return [NSString stringWithFormat:@"%@",[self objectForKey:key]];
 }
 
--(NSNumber*)intFromKey:(NSString*)key {
-    return [NSNumber numberWithInt:[[self objectForKey:key] intValue]];
+-(int)intFromKey:(NSString*)key {
+    id o = [self objectForKey:key];
+    if ([o isNumber]) return [o intValue];
+    return [o description].intValue;
 }
 
--(NSNumber*)doubleFromKey:(NSString*)key{
-    return [NSNumber numberWithDouble:[[self objectForKey:key] doubleValue]];
+-(double)doubleFromKey:(NSString*)key{
+    id o = [self objectForKey:key];
+    if ([o isNumber]) return [o doubleValue];
+    return [o description].doubleValue;
+}
+
+- (float)floatForKey:(id)key {
+    id o = [self objectForKey:key];
+    if ([o isNumber]) return [o floatValue];
+    return [o description].floatValue;
 }
 
 -(BOOL)boolForKey:(NSString *)key {
@@ -60,6 +70,30 @@
 -(void)setInt:(int)value forKey:(NSString *)key {
     NSNumber *intNumber = [NSNumber numberWithInt:value];
     [self setObject:[intNumber stringValue] forKey:key];
+}
+
+@end
+
+
+@implementation NSObject (NSObject_WhatIsHelper)
+
+- (BOOL)isDict {
+    return [self isKindOfClass:[NSDictionary class]];
+}
+- (BOOL)isArray {
+    return [self isKindOfClass:[NSArray class]];
+}
+- (BOOL)isString {
+    return [self isKindOfClass:[NSString class]];
+}
+- (BOOL)isNumber {
+    return [self isKindOfClass:[NSNumber class]];
+}
+- (BOOL)isNull {
+    return self==[NSNull null];
+}
+- (BOOL)isData {
+    return [self isKindOfClass:[NSData class]];
 }
 
 @end

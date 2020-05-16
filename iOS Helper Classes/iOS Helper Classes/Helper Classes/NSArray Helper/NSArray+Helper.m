@@ -1,4 +1,4 @@
-//
+  //
 //  NSArray+Helper.m
 //  iOS Helper Classes
 //
@@ -10,10 +10,9 @@
 
 @implementation NSArray (Helper)
 
--(NSArray*)sortedArrayByKey:(NSString*)key isDesc:(BOOL)desc{
-    
+- (NSArray*)sortedArrayByKey:(NSString*)key isDesc:(BOOL)desc
+{
     if ([self count]>0) {
-        
         if ([[self objectAtIndex:0] isKindOfClass:[NSString class]]) {
             NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:(!desc) selector:@selector(localizedCaseInsensitiveCompare:)];
             return [self sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
@@ -24,8 +23,27 @@
             
         }
     }
-    
     return self;
 }
+
+- (id)safeObjectAtIndex:(NSUInteger)index
+{
+    if (index >= self.count) {
+        return nil;
+    }
+    return [self objectAtIndex:index];
+}
+
+- (NSArray *)shuffled
+{
+    // create temporary autoreleased mutable array
+    NSMutableArray *tmpArray = [NSMutableArray arrayWithCapacity:[self count]];
+    for (id anObject in self) {
+        NSUInteger randomPos = arc4random()%([tmpArray count]+1);
+        [tmpArray insertObject:anObject atIndex:randomPos];
+    }
+    return [NSArray arrayWithArray:tmpArray];  // non-mutable autoreleased copy
+}
+
 
 @end
